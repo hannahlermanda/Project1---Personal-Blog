@@ -1,0 +1,300 @@
+
+/*Author's Card*/
+.authorCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    height:20%;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    object-fit: cover;
+    max-height:500px;
+  }
+
+
+.authorGridItem {
+  display: grid;
+  grid-template-areas:
+    "image .."
+    "image .."
+    "image info"
+    "image .."
+    "image icons"
+    "image .."
+    "image .."
+    "moreInfo moreInfo";
+  grid-gap: 10px;
+}
+
+
+#authorImage {
+  grid-area: image;
+  width:100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: 15%;
+  margin-top: 5%;
+  border-radius: 50%;
+  border: 5px solid rgb(104 1 82)
+
+}
+
+.authorCardContainer {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow:1;
+}
+
+.authorInfo {
+  margin: 0;
+  color: black;
+}
+
+.authorGridItemMore{
+  grid-area: moreInfo;
+}
+
+.authorBio {
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+.socialMediaIconsAuthor {
+  grid-area: icons;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+}
+
+.fa-linkedin:visited{
+  color: whitesmoke;
+}
+
+.fa{
+  padding: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  flex-grow: 1;
+  color:whitesmoke;
+}
+
+@media screen and (max-width:895px) {
+  #authorImage {
+    grid-area: image;
+    width:100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 15%;
+    margin-top: 5%;
+    object-fit: contain;
+    border: none;
+  }
+
+  .authorInfo{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .fa-linkedin,
+  .socialMediaIconsAuthor a.fa.fa-twitter,
+  .socialMediaIconsAuthor a.fa.fa-facebook{
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width:757px) {
+  .authorGridItem {
+    display: grid;
+    grid-template-areas:
+      "image image image"
+      "image image image"
+      ".. info .."
+      ".. icons .."
+      "moreInfo moreInfo moreInfo";
+    grid-gap: 10px;
+  }
+
+  #authorImage{
+    margin-left: 0px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+
+  /*Blog Cards on Home Page*/
+
+  .blogCardFlexContainer {
+    display: flex;
+    margin-right: 50px;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .authorGridItem, .blogCardGridItem{
+    display: grid;
+    justify-items: center;
+  }
+
+.blogCardLink{
+  text-decoration: none;
+  text-align: center;
+}
+
+.cardInfo{
+    color: black;
+    width: 100%;
+}
+
+.blogCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+  background-color: white;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  object-fit: cover;
+  max-height:400px;
+}
+
+#blogImage{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/*Read More*/
+.readMore{
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.blogCardLink:visited{
+  color: black;
+}
+
+.readMore:hover .readMoreLink:visited {
+  color: whitesmoke;
+}
+
+.readMore.readMoreLink:hover {
+  background-color: rgba(143, 2, 112, 1);
+  color: whitesmoke;
+  animation-duration: 0.3s;
+}
+
+.readMore:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:1045px) {
+  .blogCard{
+    width: 43%;
+  }
+}
+
+@media screen and (max-width:790px) {
+  .blogCard{
+    width: 70%;
+    max-height:500px;
+  }
+}
+
+@media screen and (max-width:481px) {
+  .blogCard{
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #blogImage{
+    height: 100%;
+  }
+
+.blogCardFlexContainer{
+  margin-right: 0px;
+  }
+}
+
+@media screen and (max-width:345px) {
+  .cardInfo{
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width:275px) {
+  .blogCard{
+    max-height:200px;
+    min-height: 150px;
+    height:auto;
+  }
+
+  .cardInfo{
+    font-size: 12px;
+  }
+
+  .blogCardLink{
+    font-size: 16px;
+  }
+}
+
+/*Element of the Week*/
+#elementOfTheWeek {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  object-fit: cover;
+  max-height:400px;
+  text-align: center;
+}
+
+#elementOfTheWeekLink:visited{
+  color: black;
+}
+
+#elementOfTheWeekImage{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+#elementOfTheWeekCardContainer{
+  display: grid;
+  margin-bottom: 15px;
+}
+
+.elementOfTheWeekCardInfo{
+    color: black;
+    width: 100%;
+}
+

@@ -1,0 +1,192 @@
+
+@import "../Reusable/NavBar.css";
+@import "../Reusable/card.css";
+@import "../Reusable/Footer.css";
+
+*{
+  scroll-behavior: smooth;
+  font-size: 18px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: white;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+ 
+ body{
+  background-image: url("https://cdn.pixabay.com/photo/2018/02/27/14/58/crystal-grid-3185671_960_720.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ 
+#cardToScroll{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+#cardToScroll:hover{
+  box-shadow: 0px 8px 16px 0 rgba(172, 255, 251, 0.7);
+}
+
+#cardToScroll:visited{
+  color: white;
+}
+
+/*Periodic Table*/
+
+ .elementOnTable{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+
+  .noElement{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border: none;
+    visibility: hidden;
+  }
+
+  .elementLink{
+    text-decoration: none;
+  }
+
+  #periodicTable{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+@media screen and (max-width:1015px) {
+  .elementLink{
+    font-size: 15px;
+  }
+
+  .elementOnTable{
+    height:30px;
+    width:30px;
+  }
+
+  #periodicTable{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width:666px) {
+  #periodicTable, 
+  #periodicTableLegend,
+  #clickHereToLearnMore,
+  #cardToScroll,
+  #elementsLabel{
+    display:none;
+  }
+  
+}
+
+#periodicTableLegendContainer{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#periodicTableLegend{
+  border-radius: 30px;
+  background-color: rgba(143, 2, 112, 0.9);
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.periodicTableLegendListings{
+  display: inline-flex;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#legendHeader{
+  padding-top: 25px;
+  font-size: 31px;
+}
+
+.headerTitles{
+  text-align: center;
+}
+
+a:visited{
+  color: rgb(000, 0, 138);
+}
+
+/*Element Colors*/
+
+  .nonmetalElement{
+    background-color: #8DA1B9 ;
+  }
+
+  .alkaliElement{
+    background-color: #FFA69E;
+  }
+
+  .alkalineEarthMetalElement{
+    background-color: #58FCEC;
+  }
+
+  .transitionMetalElement{
+    background-color: #61D095;
+  }
+
+  .postTransitionMetalElement{
+    background-color: #FFD166;
+  }
+
+  .metalloidElement{
+    background-color: #32CBFF;
+  }
+
+  .halogenElement{
+    background-color: #72705B;
+  }
+
+  .nobleGasElement{
+    background-color: #DDBB88;
+  }
+
+  .lanthanideElement{
+    background-color: #87FF65;
+  }
+
+  .actinideElement{
+    background-color: #DB93B0;
+  }

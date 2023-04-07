@@ -1,0 +1,41 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+nav{
+   display: flex;
+   font-size: 18px;
+   justify-content: space-around;
+   align-content: center;
+   flex-direction: row;
+   background-color:  rgba(143, 2, 112, 1);
+   list-style: none;
+}
+.navBarLinks{
+    color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#thePT{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+}
+
+#navBar{
+    margin: 0;
+    padding: 20px;
+}
+
+.navBarLinks:visited{
+    color: whitesmoke;
+}
+

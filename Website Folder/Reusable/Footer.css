@@ -1,0 +1,79 @@
+footer{
+   position: relative;
+   font-size: 18px;
+   background-color:  rgba(143, 2, 112, 1);
+   padding: 20px;
+   bottom: 0px;
+}
+
+#footerContainer{
+   display:grid;
+   margin-left: 0px;
+}
+
+.socialMediaIcons{
+   display:flex;
+   justify-content: center;
+}
+
+.fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   flex-grow: 1;
+   color:whitesmoke;
+ }
+
+ .fa-facebook {
+   background: #0246da;
+ }
+
+ .fa-twitter {
+   background: #55ACEE;
+ }
+
+ .fa-instagram {
+   background-color: #f73c93;
+}
+
+.fa-youtube {
+   background: #bb0000;
+ }
+
+ .fa-facebook:visited,
+ .fa-twitter:visited,
+ .fa-instagram:visited,
+ .fa-youtube:visited{
+   color: whitesmoke;
+ }
+
+/*Subscribe*/
+#putEmailHereToSubscribe{
+   width:90%;
+   flex-grow: 1;
+   margin-bottom: 10px;
+}
+
+#sendToSubscribe{
+   width: 8%;
+   flex-grow: 1;
+   margin-bottom: 10px;
+}
+
+#sendToSubscribe:hover{
+   cursor: pointer;
+}
+
+@media  screen and (min-width:350px) and (max-width:789px) {
+   #putEmailHereToSubscribe{
+      min-width:98%;
+   }
+   
+   #sendToSubscribe{
+      display:flex;
+      min-width: 62px;
+      margin-top: 10px;
+   }
+}
