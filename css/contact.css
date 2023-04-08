@@ -1,6 +1,6 @@
-@import "../Reusable/NavBar.css";
-@import "../Reusable/Footer.css";
-@import "../Home\ Page/homePage.css";
+@import "../css/NavBar.css";
+@import "../css/Footer.css";
+@import "../css/homePage.css";
 
 #more {
     color:white;

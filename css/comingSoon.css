@@ -1,7 +1,7 @@
-@import "../Home\ Page/homePage.css";
-@import "../Reusable/Footer.css";
-@import "../Reusable/NavBar.css";
-@import "../Reusable/card.css";
+@import "../css/homePage.css";
+@import "../css/Footer.css";
+@import "../css/NavBar.css";
+@import "../css/card.css";
 
 /*Loading Circle*/
 
