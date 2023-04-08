@@ -33,6 +33,18 @@ body{
     text-align: center;
 }
 
+.quote > *{
+    font-size: 23px;
+}
+
+.quote{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    font-size: 23px;
+}
+
 /*Page Layout*/
  /*Fast Facts*/
 #fastFactsHeader{
@@ -68,7 +80,12 @@ body{
         ".. .. fastInfo fastInfo fastInfo .. .."
         ".. .. fastInfo fastInfo fastInfo .. .."
         ".. .. fastInfo fastInfo fastInfo .. ..";
+    }
+}
 
+@media screen and (max-width: 712px) {
+    .fastFactsInfo{
+        text-align: center;
     }
 }
 

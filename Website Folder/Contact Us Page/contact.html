@@ -20,6 +20,33 @@
   </header>
 <body>
     <h1 class="headerTitles sendAMessageTitle">Send Us a Message for even <em id= "more" class="headerTitles sendAMessageTitle">MORE</em> Information about your Favorite Element(s)!</h1>
+    <section id="messageSection">
+          <form id="leaveMessage" name="leave_message">
+              <section id="usersNameSection">
+                  <label for ="usersName">Name:</label>
+                      <input type="text" id="usersName" name="usersName" required="true">
+              </section>
+              <br>
+              <br>
+              <section id="usersEmailSection">
+                  <label for ="usersEmail">Email:</label>
+                      <input type="email" id="usersEmail" name="usersEmail" required="true" placeholder="abc@email.com" >
+              </section>
+              <br>
+              <br>
+              <section class="usersMessageSection">
+                <label id= "yourMessage" for ="usersMessage">Your Message:</label>
+                  <div class="usersMessageSection">
+                      <textarea id="usersMessage" name="usersMessage" required="true" rows="20" cols="150"></textarea>
+                  </div>
+                  <br>
+                </section>
+              <section id="sendMessageFull">
+                <label for ="submitMessage"></label>
+                    <button id="sendMessage" type="submit">Submit</button>
+              </section>
+          </form>
+    </section>
     <footer> 
         <div id="footerContainer">
           <h3>Subscribe Here!</h3>

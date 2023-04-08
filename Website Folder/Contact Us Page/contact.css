@@ -8,3 +8,66 @@
     text-shadow: 2px 0 #070707, -2px 0 #050505, 0 2px #020202, 0 -2px #030303,
              1px 1px #070707, -1px -1px #070707, 1px -1px #030303, -1px 1px #020202;
 }
+
+
+#messageSection {
+    display: flex;
+    justify-content: center;
+    background-color:  rgba(143, 2, 112, 0.8);
+    margin-bottom: 30px;
+  }
+  
+  #leaveMessage {
+    width: 100%;
+    max-width: 700px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    text-shadow: 2px 0 whitesmoke, -2px 0 whitesmoke, 0 2px whitesmoke, 0 -2px whitesmoke,
+             1px 1px whitesmoke, -1px -1px whitesmoke, 1px -1px whitesmoke, -1px 1px whitesmoke;
+  }
+  
+  textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .usersMessageSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  #usersNameSection,
+  #usersEmailSection {
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+  }
+  
+  #sendMessage {
+    background-color: #E0D8DE;
+    color: #210124;
+    border-color: #210124;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 124px;
+    grid-area: submitMessageButton;
+  }
+
+  #sendMessageFull{
+    grid-area: submitMessageButton;
+  }
+  
+  #sendMessage:hover {
+    background: rgb(15,113,177);
+    background: linear-gradient(180deg, rgba(15,113,177,1) 17%, rgba(21,85,170,1) 52%, rgba(0,63,145,1) 79%);
+    color: #E0D8DE ;
+    border-color: rgb(15,113,177);
+    border-color: linear-gradient(180deg, rgba(15,113,177,1) 17%, rgba(21,85,170,1) 52%, rgba(0,63,145,1) 79%);
+  }
+

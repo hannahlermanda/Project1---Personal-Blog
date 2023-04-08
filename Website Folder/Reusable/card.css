@@ -157,6 +157,10 @@
     justify-items: center;
   }
 
+.blogCardContainer{
+  display: grid;
+}
+
 .blogCardLink{
   text-decoration: none;
   text-align: center;
