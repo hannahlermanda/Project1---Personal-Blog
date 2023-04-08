@@ -3,41 +3,41 @@
 @import "../Reusable/NavBar.css";
 @import "../Reusable/card.css";
 
-*{
+* {
     line-height: 1.5;
 }
 
-body{
+body {
     background-image: url("../Reusable/nonMetal.svg");
 }
 
-.articleHeaders{
+.articleHeaders {
     text-align: center;
     text-shadow: 2px 0 #070707, -2px 0 #050505, 0 2px #020202, 0 -2px #030303,
-             1px 1px #070707, -1px -1px #070707, 1px -1px #030303, -1px 1px #020202;
+        1px 1px #070707, -1px -1px #070707, 1px -1px #030303, -1px 1px #020202;
 }
 
-#hydrogenAtom{
+#hydrogenAtom {
     background-position-y: 50%;
-    max-height:400px;
+    max-height: 400px;
     height: auto;
-    width:100%;
+    width: 100%;
     object-fit: contain;
 }
 
-.hydrogenAtomPic{
+.hydrogenAtomPic {
     grid-area: hydrogenAtom;
 }
 
-.published{
+.published {
     text-align: center;
 }
 
-.quote > *{
+.quote>* {
     font-size: 23px;
 }
 
-.quote{
+.quote {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -46,61 +46,61 @@ body{
 }
 
 /*Page Layout*/
- /*Fast Facts*/
-#fastFactsHeader{
+/*Fast Facts*/
+#fastFactsHeader {
     grid-area: fastHeader
 }
 
-.fastFactsInfo{
+.fastFactsInfo {
     grid-area: fastInfo
 }
 
-.fastFactsBackground{
+.fastFactsBackground {
     display: grid;
-    background-color:  rgba(143, 2, 112, 0.8);
-    grid-template-areas: 
-    ".. fastHeader fastHeader fastHeader fastHeader fastHeader .."
-    ".. .. fastInfo fastInfo hydrogenAtom .. .."
-    ".. .. fastInfo fastInfo hydrogenAtom .. .."
-    ".. .. fastInfo fastInfo hydrogenAtom .. .."
-    ".. .. fastInfo fastInfo hydrogenAtom .. .."
-    ".. .. .. .. hydrogenAtom .. .."
-    ".. .. .. .. hydrogenAtom .. ..";
+    background-color: rgba(143, 2, 112, 0.8);
+    grid-template-areas:
+        ".. fastHeader fastHeader fastHeader fastHeader fastHeader .."
+        ".. .. fastInfo fastInfo hydrogenAtom .. .."
+        ".. .. fastInfo fastInfo hydrogenAtom .. .."
+        ".. .. fastInfo fastInfo hydrogenAtom .. .."
+        ".. .. fastInfo fastInfo hydrogenAtom .. .."
+        ".. .. .. .. hydrogenAtom .. .."
+        ".. .. .. .. hydrogenAtom .. ..";
     grid-gap: 50px;
 }
 
 @media screen and (max-width: 1045px) {
-    .fastFactsBackground{
+    .fastFactsBackground {
 
-        grid-template-areas: 
-        ".. fastHeader fastHeader fastHeader fastHeader fastHeader .."
-        ".. .. hydrogenAtom hydrogenAtom hydrogenAtom .. .."
-        ".. .. hydrogenAtom hydrogenAtom hydrogenAtom .. .."
-        ".. .. hydrogenAtom hydrogenAtom hydrogenAtom .. .."
-        ".. .. fastInfo fastInfo fastInfo .. .."
-        ".. .. fastInfo fastInfo fastInfo .. .."
-        ".. .. fastInfo fastInfo fastInfo .. ..";
+        grid-template-areas:
+            ".. fastHeader fastHeader fastHeader fastHeader fastHeader .."
+            ".. .. hydrogenAtom hydrogenAtom hydrogenAtom .. .."
+            ".. .. hydrogenAtom hydrogenAtom hydrogenAtom .. .."
+            ".. .. hydrogenAtom hydrogenAtom hydrogenAtom .. .."
+            ".. .. fastInfo fastInfo fastInfo .. .."
+            ".. .. fastInfo fastInfo fastInfo .. .."
+            ".. .. fastInfo fastInfo fastInfo .. ..";
     }
 }
 
 @media screen and (max-width: 712px) {
-    .fastFactsInfo{
+    .fastFactsInfo {
         text-align: center;
     }
 }
 
 /*Other parts of the article*/
-.articleParts{
+.articleParts {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.articleParts p{
+.articleParts p {
     font-size: 20px;
 }
 
-#hydrogenExplorers{
+#hydrogenExplorers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,66 +108,67 @@ body{
     padding-top: 20px;
 }
 
-#hCavendish, #aLavoisier{
+#hCavendish,
+#aLavoisier {
     width: 100%;
     height: auto;
-    max-height:500px;
+    max-height: 500px;
 }
 
-figcaption{
+figcaption {
     font-style: italic;
 }
 
-#electricity{
+#electricity {
     display: grid;
-    grid-template-areas: 
-    "electricTitle electricTitle electricTitle"
-    "electricityP electrictyP hydrogenCellPic"
-    " electricityP electrictyP hydrogenCellPic";
+    grid-template-areas:
+        "electricTitle electricTitle electricTitle"
+        "electricityP electrictyP hydrogenCellPic"
+        " electricityP electrictyP hydrogenCellPic";
 }
 
-#electricityParagraph{
+#electricityParagraph {
     grid-area: electricityP;
     padding-top: 25px;
 }
 
-#electricityHeader{
+#electricityHeader {
     grid-area: electricTitle;
 }
 
-#hydrogrenCellFull{
+#hydrogrenCellFull {
     grid-area: hydrogenCellPic;
 }
 
-#hydrogenCellImage{
+#hydrogenCellImage {
     width: 100%;
     height: auto;
-    max-height:300px;
+    max-height: 300px;
 }
 
 @media screen and (max-width:836px) {
-    #electricity{
-        grid-template-areas: 
-        "electricTitle electricTitle electricTitle"
-        "hydrogenCellPic  hydrogenCellPic hydrogenCellPic"
-        " electricityP electrictyP electrictyP";
+    #electricity {
+        grid-template-areas:
+            "electricTitle electricTitle electricTitle"
+            "hydrogenCellPic  hydrogenCellPic hydrogenCellPic"
+            " electricityP electrictyP electrictyP";
     }
 
-    #hydrogenCellImage{
-        max-height:500px;
+    #hydrogenCellImage {
+        max-height: 500px;
     }
 }
 
-#rocketLaunch{
-    width:100%;
-    height:auto;
+#rocketLaunch {
+    width: 100%;
+    height: auto;
     max-height: 400px;
     object-fit: contain;
 }
 
-#rocketLaunchFull{
-    width:100%;
-    height:auto;
+#rocketLaunchFull {
+    width: 100%;
+    height: auto;
     object-fit: contain;
     margin-left: 0px;
     margin-right: 0px;
